@@ -28,18 +28,25 @@ VALUES
 (2, 'Dastan', 'Abdullaev', 'M', '2006-02-04', 'dosyafree32@gmail.com', '50wpm', 'unknown'),
 (3, 'Bekbolsun', 'Nasipbekov', 'M', '2006-03-12', 'nasipbekov01@gmail.com', '40wpm', 'unknown'),
 (4, 'Daniel', 'Ahadzanov', 'M', '2007-11-11', 'danijelahatzanov@gmail.com', '90wpm', 'unknown'),
-(5, 'Sardor', 'Kalmurzaev', 'M', '2005-09-30', '+996771007806', '40wpm', 'Kolhoznaya street № ?'),
+(5, 'Sardor', 'Kalmurzaev', 'M', '2005-09-30', '+996771007806', '40wpm', 'Kolhoznaya street № ?');
+
+INSERT INTO students(student_id, first_name, last_name, gender, birth, phone_or_email, typing, address)
+VALUES
 (6, 'Elbek', 'Mashrapov', 'M', '2006-08-02', 'elbekmashrapov@gmail.com', '90wpm', 'unknown');
 
 SELECT *
-FROM students;
+FROM students
+WHERE first_name LIKE 'Marlen';
 
+SELECT *
+FROM students
+ORDER BY birth;
 --- DML (Data Manipulating Language)
 --- UPDATE
 --- DELETE
 UPDATE students
-SET phone_or_email = 'neon30@gmail.com'
-WHERE phone_or_email = '+996771007806';
+SET phone_or_email = 'neon0530@gmail.com'
+WHERE student_id = 5;
 
 DELETE FROM students
 WHERE student_id = 6;

@@ -1,5 +1,3 @@
-package db_task;
-
 CREATE TABLE products
 (
     id           SERIAL PRIMARY KEY,

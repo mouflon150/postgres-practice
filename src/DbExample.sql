@@ -9,8 +9,8 @@ CREATE TABLE products
 
 INSERT INTO products(product_name, manufacturer, product_count, price)
 VALUES
-('IPhone X', 'Aple', 2, 70000),
-('IPhone 8', 'Aple', 3, 56000),
+('IPhone X', 'Apple', 2, 70000),
+('IPhone 8', 'Apple', 3, 56000),
 ('Galaxy s9', 'Samsung', 6, 56000),
 ('Galaxy s8 Plus', 'Samsung', 2, 46000),
 ('Desire 12', 'HTC', 3, 26000);
@@ -24,11 +24,11 @@ WHERE manufacturer = 'Samsung';
 
 SELECT *
 FROM products
-WHERE manufacturer = 'Aple';
+WHERE manufacturer = 'Apple';
 
 SELECT *
 FROM products
-WHERE manufacturer = 'Aple' AND price > 60000;
+WHERE manufacturer = 'Apple' AND price > 60000;
 
 SELECT *
 FROM products

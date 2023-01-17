@@ -24,10 +24,6 @@ WHERE manufacturer = 'Samsung';
 
 SELECT *
 FROM products
-WHERE manufacturer = 'Apple';
-
-SELECT *
-FROM products
 WHERE manufacturer = 'Apple' AND price > 60000;
 
 SELECT *

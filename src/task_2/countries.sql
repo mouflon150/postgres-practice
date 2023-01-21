@@ -13,4 +13,11 @@ values
 ('Russia', 17098246, 145000000, 2),
 ('Ukraine', 603549, 41000000, 3),
 ('USA', 9865439, 301650000, 4),
-('Kazakhstan', 2742989, 19644000, 5);
+('Kazakhstan', 2742989, 19644000, 5),
+(null, null, null, 6),
+(null, null, null, 7),
+('Germany', 357578, 84100000, 8),
+('France', 643801, 67897000, 9);
+
+truncate table countries;
+drop table countries;

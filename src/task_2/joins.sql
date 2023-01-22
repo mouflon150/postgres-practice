@@ -1,14 +1,11 @@
 select *
 from countries
-inner join presidents p
-on p.id = countries.president_id;
+full join presidents using (president_id);
 
 select *
 from countries
-left join presidents p
-on p.id = countries.president_id;
+left join presidents using (president_id);
 
 select *
-from countries
-right join presidents p
-on p.id = countries.president_id;
+from presidents
+right join countries using (president_id);

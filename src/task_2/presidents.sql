@@ -1,10 +1,10 @@
 create table presidents
 (
-    id        serial primary key,
-    full_name varchar,
-    age       smallint,
-    gender    character check ( gender = 'm' or gender = 'f' ),
-    email     varchar unique check ( email like '%@%')
+    president_id serial primary key,
+    full_name    varchar,
+    age          smallint,
+    gender       character check ( gender = 'm' or gender = 'f' ),
+    email        varchar unique check ( email like '%@%')
 );
 
 insert into presidents(full_name, age, gender, email)
@@ -16,8 +16,9 @@ values
 ('Nursultan Nazarbaevich', 60, 'm', 'kzwhitehouse@gmail.com'),
 ('Luis Inácio Lula da Silva', 77, 'm', 'brazillianprezident@gmail.com'),
 ('Recep Tayyip Erdogan', 68, 'm', 'turkishpresident@gmail.com'),
-(null, null, null, 'unkown@gmail.com'),
-(null, null, null, 'anonim@gmail.com');
+(null, null, null, null),
+(null, null, null, null),
+(null, null, null, null);
 
 truncate table presidents;
 drop table presidents;
